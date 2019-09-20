@@ -1,3 +1,9 @@
+/*
+* @Author: antonioe
+* @Date:   2019-09-19 16:13:27
+* @Last Modified by:   antonioe
+* @Last Modified time: 2019-09-19 20:20:14
+*/
 /* Copyright 2017 Sergei Akhmatdinov                                         */
 /*                                                                           */
 /* Licensed under the Apache License, Version 2.0 (the "License");           */
@@ -107,7 +113,7 @@ main(void)
 		time = gettime();
 		batt = getbatt();
 
-		snprintf(status, 100, "dwm 6.1  L:%s  %s  %d%%",
+		snprintf(status, 100, "dwm 6.2  L:%s  %s  %d%%",
 				      load, time, batt);
 		setstatus(status);
 		free(load);
@@ -116,4 +122,3 @@ main(void)
 
 	return 0;
 }
-
